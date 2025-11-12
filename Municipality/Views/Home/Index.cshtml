@@ -1,8 +1,43 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Municipality Service Portal";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-5">
+    <div class="text-center mb-5">
+        <h1 class="display-4 text-primary">Welcome to Your Municipality Service Portal</h1>
+        <p class="lead text-secondary">
+            Access municipal services, stay updated on event announcements, and submit service requests easily.
+        </p>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title mb-3">Get Started</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <a href="/ServiceRequest" class="text-decoration-none">
+                                Submit a Service Request
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/EventAnnouncement" class="text-decoration-none">
+                                View Event Announcements
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="ST10262707" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                                Learn about ASP.NET Core web apps
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <footer class="text-center mt-5 text-muted">
+                &copy; @DateTime.Now.Year Your Municipality. All rights reserved.
+            </footer>
+        </div>
+    </div>
 </div>
